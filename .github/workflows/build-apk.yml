@@ -16,6 +16,9 @@ jobs:
     name: Build & Release APK
     runs-on: ubuntu-latest
 
+    env:
+      ANDROID_HOME: /usr/local/lib/android/sdk
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -26,14 +29,10 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
       - name: Install NPM Dependencies
         run: |
@@ -45,7 +44,7 @@ jobs:
 
       - name: Add Capacitor & Android Platform
         run: |
-          npm install @capacitor/core@latest @capacitor/cli@latest @capacitor/android@latest --legacy-peer-deps
+          npm install @capacitor/core @capacitor/cli @capacitor/android --legacy-peer-deps
           npx cap add android || true
           npx cap sync android
 
@@ -74,7 +73,16 @@ jobs:
         run: |
           TAG="v1.0.0"
           TITLE="AuraSync v1.0.0 - Android Release"
-          NOTES="### AuraSync v1.0.0 (Android APK)\n\nRestorative workspace telemetry and cadence protection companion.\n\n- **Companion Widget**: Real-time cognitive resonance dial, flow metrics, and 4-4-4 box breathing.\n- **Cadence Scheduler**: Interactive buffer protection, friction warnings, and Google/Outlook calendar sync.\n- **Focus Shield**: Non-intrusive peripheral modal with somatic reset protocols.\n- **Telemetry**: Cognitive spline analytics and ambient 432Hz acoustic shield.\n\nDownload the attached **AuraSync-v1.0.0.apk** below to install on Android."
+          NOTES="### AuraSync v1.0.0 (Android APK)
+
+          Restorative workspace telemetry and cadence protection companion.
+
+          - **Companion Widget**: Real-time cognitive resonance dial, flow metrics, and 4-4-4 box breathing.
+          - **Cadence Scheduler**: Interactive buffer protection, friction warnings, and Google/Outlook calendar sync.
+          - **Focus Shield**: Non-intrusive peripheral modal with somatic reset protocols.
+          - **Telemetry**: Cognitive spline analytics and ambient 432Hz acoustic shield.
+
+          Download the attached **AuraSync-v1.0.0.apk** below to install on Android."
           
           # Delete existing release/tag if already present to ensure clean upload
           gh release delete "$TAG" --yes || true
