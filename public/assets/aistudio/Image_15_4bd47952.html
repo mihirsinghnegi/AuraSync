@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#0e1513;color:#dde4e0;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;min-height:100vh;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#dde4e0", "tertiary": "#f9bb68", "surface-container-low": "#161d1b", "on-tertiary-fixed-variant": "#643f00", "background": "#0e1513", "tertiary-fixed-dim": "#f9bb68", "primary": "#aacebf", "primary-fixed": "#c6ebdb", "on-secondary-fixed-variant": "#004f55", "secondary-fixed-dim": "#8cd2d9", "error": "#ffb4ab", "on-error-container": "#ffdad6", "surface-container": "#1a211f", "error-container": "#93000a", "on-primary-container": "#16372d", "on-secondary-fixed": "#002022", "on-surface": "#dde4e0", "on-secondary": "#00363b", "on-tertiary-fixed": "#2a1800", "inverse-surface": "#dde4e0", "on-surface-variant": "#c1c8c3", "surface-bright": "#333b38", "on-tertiary": "#462b00", "secondary-container": "#005c62", "surface-dim": "#0e1513", "surface-tint": "#aacebf", "primary-container": "#7ea193", "outline": "#8b928e", "on-error": "#690005", "surface-variant": "#2f3634", "on-primary-fixed-variant": "#2c4d42", "secondary-fixed": "#a8eef6", "on-tertiary-container": "#472c00", "on-primary": "#15362c", "secondary": "#8cd2d9", "inverse-on-surface": "#2b3230", "on-primary-fixed": "#002117", "outline-variant": "#414845", "surface-container-highest": "#2f3634", "tertiary-container": "#c68f41", "primary-fixed-dim": "#aacebf", "surface": "#0e1513", "on-secondary-container": "#8cd2d9", "surface-container-lowest": "#09100e", "tertiary-fixed": "#ffddb5", "inverse-primary": "#446559", "surface-container-high": "#242b29" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "gutter-lg": "2rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-sm": "1rem", "margin-lg": "3.5rem", "margin-sm": "1.25rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin": "2rem", "space-xl": "2.5rem" }, "fontFamily": { "body-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "caption": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, "fontSize": { "body-lg": ["1.125rem", { "lineHeight": "1.8rem", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-md": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "500" }], "caption": ["0.6875rem", { "lineHeight": "0.95rem", "letterSpacing": "0.04em", "fontWeight": "400" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.03em", "fontWeight": "500" }], "body-sm": ["0.875rem", { "lineHeight": "1.45rem", "letterSpacing": "0.005em", "fontWeight": "400" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-lg": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "headline-lg-mobile": ["1.625rem", { "lineHeight": "2.125rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-xl-mobile": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-xl": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.03em", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.6rem", "letterSpacing": "0em", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(4,8,7,0.35)] pt-safe"><div class="h-16 px-gutter-sm flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="AuraSync Brand Mark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X6gJakXHxdJx-jqdv3s7VZO6RFTdCDn2E9abbFdIWBadvvC6AwL35OslkndfPx5WvF_8AsgeDqxLpy_W-hqUy2lrFM9If6z5XKdoqORTfuzXofBljZAvdvGegBC6w_jqDF1xtf5yFXpBSzEp2yfAAwdBYNszqPGwQitMYK9Xfh2dm7cE-QJ2cRq3ENvDTLDlr7hWEqeMuehSYKp3PeudPJbqbhPVBwWEbAejb0yxWg8_nMPq9M1icY7g"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">AuraSync</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-lg bg-surface-container/70 shadow-[inset_0_0_0_1px_rgba(170,206,191,0.12)]"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">State: Balanced</span></div><div class="flex items-center"><button aria-label="Profile" class="w-11 h-11 flex items-center justify-center rounded-full transition-transform active:scale-95 focus:outline-none"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ2ORZMq_5oicYpoJBg35NyEnCz3Naow1J22Gs_H4i89BO9JdK5EZGPSoVPjuFZNw4ak279PDe5yIwCBXcfdS8wIZ5TO6nEzelWL80cSVM6Vf-uCmwk4JoXYyjBvPOlzZfResh07eueKzaubDi3X0ek2JHP9oPy7wzFDaV5Tfhvrl287YpL4sYWBKL6OWtTOe5V1z_sy5SvUkS8MKfkbKEt9kpaW1SilGNxqyA3k0GM7ME7ELbZgFH"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-gutter-sm space-y-space-md">
+<!-- Ambient Bio-Atmosphere Decorative Glow -->
+<div class="relative w-full overflow-hidden rounded-xl bg-surface-container/60 backdrop-blur-xl p-space-md shadow-xl transition-all duration-300">
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -left-8 w-40 h-40 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Top Card Header -->
+<div class="flex items-center justify-between relative z-10 mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary tracking-wide uppercase">Resonance Sensor Active</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant bg-surface-container-high/80 px-2 py-0.5 rounded-md">Live Stream</span>
+</div>
+<!-- Interactive Pulsing Aura Ring Component -->
+<div class="flex flex-col items-center justify-center py-space-sm relative z-10">
+<div class="relative flex items-center justify-center w-52 h-52 group cursor-pointer" id="auraRingContainer" title="Tap to calibrate resonance">
+<!-- Ambient Breathing Waves -->
+<div class="absolute inset-0 rounded-full bg-gradient-to-tr from-secondary/15 via-primary/20 to-transparent animate-pulse blur-xl scale-110"></div>
+<!-- SVG Dual Ring Telemetry Gauges -->
+<svg class="w-48 h-48 transform -rotate-90" viewbox="0 0 120 120">
+<circle class="text-surface-variant/40" cx="60" cy="60" fill="none" r="50" stroke="currentColor" stroke-width="5"></circle>
+<circle class="transition-all duration-1000 ease-out" cx="60" cy="60" fill="none" id="auraGauge" r="50" stroke="url(#auraGrad)" stroke-dasharray="314.15" stroke-dashoffset="182.2" stroke-linecap="round" stroke-width="6"></circle>
+<circle class="text-primary/20 animate-spin" cx="60" cy="60" fill="none" r="41" stroke="currentColor" stroke-dasharray="4 6" stroke-width="2" style="animation-duration: 28s;"></circle>
+<defs>
+<lineargradient id="auraGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#8cd2d9"></stop>
+<stop offset="100%" stop-color="#aacebf"></stop>
+</lineargradient>
+</defs>
+</svg>
+<!-- Center Core Values -->
+<div class="absolute flex flex-col items-center text-center px-4">
+<span class="font-caption text-caption text-secondary tracking-widest uppercase mb-0.5">Cognitive Load</span>
+<div class="flex items-baseline gap-0.5">
+<span class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight" id="auraPercentage">42</span>
+<span class="font-headline-sm text-headline-sm text-primary">%</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary/10 px-2.5 py-0.5 rounded-full mt-1 font-medium">Optimal Flow</span>
+</div>
+</div>
+<!-- Humanized Context Feedback -->
+<div class="flex items-center gap-space-xs mt-space-xs text-center max-w-xs px-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">spa</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Attention residue is minimal across IDE &amp; Slack.</p>
+</div>
+</div>
+</div>
+<!-- Multi-modal Telemetry Pills Grid -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Switches -->
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-low/90 rounded-xl shadow-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">swap_horiz</span>
+</div>
+<div class="min-w-0">
+<p class="font-caption text-caption text-on-surface-variant truncate">Context Shifts</p>
+<p class="font-label-md text-label-md text-on-surface truncate">4/hr <span class="font-label-sm text-label-sm text-primary font-normal">(Low)</span></p>
+</div>
+</div>
+<!-- Meeting Strain -->
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-low/90 rounded-xl shadow-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-tertiary">
+<span class="material-symbols-outlined text-[20px]">timelapse</span>
+</div>
+<div class="min-w-0">
+<p class="font-caption text-caption text-on-surface-variant truncate">Meeting Strain</p>
+<p class="font-label-md text-label-md text-on-surface truncate">22m <span class="font-caption text-caption text-on-surface-variant">consecutive</span></p>
+</div>
+</div>
+<!-- Keystroke Rhythm -->
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-low/90 rounded-xl shadow-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">keyboard_alt</span>
+</div>
+<div class="min-w-0">
+<p class="font-caption text-caption text-on-surface-variant truncate">Key Rhythm</p>
+<p class="font-label-md text-label-md text-primary truncate">Fluid Cadence</p>
+</div>
+</div>
+<!-- HRV Index -->
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-low/90 rounded-xl shadow-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">ecg_heart</span>
+</div>
+<div class="min-w-0">
+<p class="font-caption text-caption text-on-surface-variant truncate">HRV Index</p>
+<p class="font-label-md text-label-md text-on-surface truncate">68 ms <span class="font-label-sm text-label-sm text-secondary font-normal">(Stable)</span></p>
+</div>
+</div>
+</div>
+<!-- Upcoming Attention Hazard Callout (Warm Protective Styling) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-md flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-tertiary/15 flex items-center justify-center shrink-0 text-tertiary mt-0.5">
+<span class="material-symbols-outlined text-[20px]">shield_with_heart</span>
+</div>
+<div class="flex-1 min-w-0 space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-semibold tracking-wide">Upcoming Friction Node</span>
+<span class="font-caption text-caption text-tertiary/90 bg-tertiary/10 px-2 py-0.5 rounded">2:00 PM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+        High context collision predicted between <span class="text-tertiary font-medium">Zoom Call</span> &amp; <span class="text-tertiary font-medium">Code Review</span>.
+      </p>
+<div class="pt-1 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[14px]">auto_fix_high</span>
+<span class="font-caption text-caption text-on-surface-variant">Suggestion: Insert a 10m recovery bubble between slots</span>
+</div>
+</div>
+</div>
+<!-- Action Triggers: Restorative Intervention Deck -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Ambient Calibrations</h2>
+<span class="font-caption text-caption text-on-surface-variant">Recommended</span>
+</div>
+<div class="grid grid-cols-1 gap-space-xs">
+<!-- 5-min Micro-Breathing -->
+<button class="w-full group p-space-sm bg-surface-container hover:bg-surface-container-high active:scale-[0.99] rounded-xl transition-all duration-200 flex items-center justify-between text-left shadow-sm" id="btnBreathe">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">air</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Start 5-min Micro-Breathing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Paced resonance breathing (4-7-8 method)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] shrink-0 ml-2">chevron_right</span>
+</button>
+<!-- Engage Shield -->
+<button class="w-full group p-space-sm bg-surface-container hover:bg-surface-container-high active:scale-[0.99] rounded-xl transition-all duration-200 flex items-center justify-between text-left shadow-sm" id="btnShield">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center shrink-0 group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[20px]">do_not_disturb_on</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Engage Focus Shield</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Silence incoming Slack &amp; Mail distractions</span>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-md bg-secondary/10 text-secondary font-label-sm text-label-sm shrink-0 ml-2">
+          Ready
+        </div>
+</button>
+<!-- Schedule 15m Transition Breather -->
+<button class="w-full group p-space-sm bg-surface-container hover:bg-surface-container-high active:scale-[0.99] rounded-xl transition-all duration-200 flex items-center justify-between text-left shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-tertiary flex items-center justify-center shrink-0 group-hover:bg-tertiary/20 transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_time</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Schedule 15m Transition</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Place auto-buffer prior to 2:00 PM session</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] shrink-0 ml-2">add</span>
+</button>
+</div>
+</div>
+<!-- Quiet Hourly Bar Chart: Morning Telemetry Timeline -->
+<div class="rounded-xl bg-surface-container-low/80 p-space-md shadow-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">schedule</span>
+<h3 class="font-label-md text-label-md text-on-surface">Morning Energy Progression</h3>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">8:00 AM – 1:00 PM</span>
+</div>
+<!-- Quiet Bar Array with Height/Opacity Modulations -->
+<div class="pt-space-xs pb-1 flex items-end justify-between h-28 gap-2 px-1">
+<!-- 8 AM -->
+<div class="flex flex-col items-center flex-1 h-full justify-end group cursor-pointer">
+<div class="w-full max-w-[28px] bg-primary/30 group-hover:bg-primary rounded-t-md transition-all h-[45%]"></div>
+<span class="font-caption text-caption text-on-surface-variant mt-2">8a</span>
+</div>
+<!-- 9 AM -->
+<div class="flex flex-col items-center flex-1 h-full justify-end group cursor-pointer">
+<div class="w-full max-w-[28px] bg-primary/45 group-hover:bg-primary rounded-t-md transition-all h-[60%]"></div>
+<span class="font-caption text-caption text-on-surface-variant mt-2">9a</span>
+</div>
+<!-- 10 AM (Flow Peak) -->
+<div class="flex flex-col items-center flex-1 h-full justify-end group cursor-pointer">
+<div class="w-full max-w-[28px] bg-secondary group-hover:bg-secondary-fixed rounded-t-md transition-all h-[80%] relative">
+<div class="absolute -top-6 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-surface-container-highest px-1.5 py-0.5 rounded text-[10px] text-on-surface whitespace-nowrap">Peak</div>
+</div>
+<span class="font-caption text-caption text-secondary mt-2 font-medium">10a</span>
+</div>
+<!-- 11 AM -->
+<div class="flex flex-col items-center flex-1 h-full justify-end group cursor-pointer">
+<div class="w-full max-w-[28px] bg-primary/70 group-hover:bg-primary rounded-t-md transition-all h-[65%]"></div>
+<span class="font-caption text-caption text-on-surface-variant mt-2">11a</span>
+</div>
+<!-- 12 PM (Lunch Restoration) -->
+<div class="flex flex-col items-center flex-1 h-full justify-end group cursor-pointer">
+<div class="w-full max-w-[28px] bg-primary/30 group-hover:bg-primary rounded-t-md transition-all h-[35%]"></div>
+<span class="font-caption text-caption text-on-surface-variant mt-2">12p</span>
+</div>
+<!-- 1 PM (Current) -->
+<div class="flex flex-col items-center flex-1 h-full justify-end group cursor-pointer">
+<div class="w-full max-w-[28px] bg-gradient-to-t from-primary/50 to-primary rounded-t-md transition-all h-[42%] relative ring-offset-2">
+<div class="w-1.5 h-1.5 rounded-full bg-primary mx-auto -mt-1 shadow-sm"></div>
+</div>
+<span class="font-caption text-caption text-primary mt-2 font-semibold">Now</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant text-[11px] border-t-0 font-caption">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-secondary"></span> Sustained Flow</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-primary/40"></span> Restorative Respite</span>
+</div>
+</div>
+<!-- Ambient Micro-Interaction Toast Container -->
+<div class="fixed bottom-24 left-4 right-4 z-40 bg-surface-container-highest text-on-surface p-space-sm rounded-xl shadow-xl flex items-center justify-between transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="ambientNotice">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]" id="noticeIcon">check_circle</span>
+<span class="font-body-sm text-body-sm" id="noticeMsg">Shield mode initialized.</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Active</span>
+</div>
+</div>
+<script>
+  (function initTelemetryWidget() {
+    const auraContainer = document.getElementById('auraRingContainer');
+    const auraGauge = document.getElementById('auraGauge');
+    const auraPercent = document.getElementById('auraPercentage');
+    const notice = document.getElementById('ambientNotice');
+    const noticeMsg = document.getElementById('noticeMsg');
+    const noticeIcon = document.getElementById('noticeIcon');
+    const btnShield = document.getElementById('btnShield');
+    const btnBreathe = document.getElementById('btnBreathe');
+
+    let isShieldActive = false;
+    let toastTimeout = null;
+
+    function triggerToast(message, iconName) {
+      if (!notice) return;
+      noticeMsg.textContent = message;
+      noticeIcon.textContent = iconName;
+      notice.classList.remove('translate-y-32', 'opacity-0');
+      notice.classList.add('translate-y-0', 'opacity-100');
+
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        notice.classList.remove('translate-y-0', 'opacity-100');
+        notice.classList.add('translate-y-32', 'opacity-0');
+      }, 3000);
+    }
+
+    if (auraContainer) {
+      auraContainer.addEventListener('click', () => {
+        // Micro-calibration pulse interaction
+        const randomLoad = Math.floor(Math.random() * (46 - 38 + 1)) + 38;
+        const dashOffset = 314.15 - (314.15 * (randomLoad / 100));
+        auraGauge.style.strokeDashoffset = dashOffset;
+        auraPercent.textContent = randomLoad;
+        triggerToast(`Resonance recalibrated: ${randomLoad}%`, 'tune');
+      });
+    }
+
+    if (btnShield) {
+      btnShield.addEventListener('click', () => {
+        isShieldActive = !isShieldActive;
+        const statusPill = btnShield.querySelector('div:last-child');
+        if (isShieldActive) {
+          statusPill.textContent = 'Active';
+          statusPill.classList.remove('bg-secondary/10', 'text-secondary');
+          statusPill.classList.add('bg-primary', 'text-on-primary');
+          triggerToast('Focus Shield active. Notifications muted.', 'shield');
+        } else {
+          statusPill.textContent = 'Ready';
+          statusPill.classList.add('bg-secondary/10', 'text-secondary');
+          statusPill.classList.remove('bg-primary', 'text-on-primary');
+          triggerToast('Focus Shield lowered.', 'notifications');
+        }
+      });
+    }
+
+    if (btnBreathe) {
+      btnBreathe.addEventListener('click', () => {
+        triggerToast('Initiating 5m breathwork sequence...', 'air');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-8px_24px_rgba(4,8,7,0.4)]" data-active-classes="text-primary bg-surface-container/50"><div class="flex justify-around items-center h-20 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs min-w-[4.25rem] h-12 rounded-lg transition-all duration-200 text-primary bg-surface-container/50" data-path="status" href="#"><span class="material-symbols-outlined text-[22px]">nest_clock_farsight_analog</span><span class="font-caption text-caption tracking-normal">Status</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[4.25rem] h-12 rounded-lg text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="day-schedule" href="#"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="font-caption text-caption tracking-normal">Schedule</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[4.25rem] h-12 rounded-lg text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="focus-shield" href="#"><span class="material-symbols-outlined text-[22px]">shield</span><span class="font-caption text-caption tracking-normal">Focus</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[4.25rem] h-12 rounded-lg text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="telemetry" href="#"><span class="material-symbols-outlined text-[22px]">insights</span><span class="font-caption text-caption tracking-normal">Telemetry</span></a></div></nav></body></html>

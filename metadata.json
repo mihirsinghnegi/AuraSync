@@ -1,0 +1,6 @@
+{
+  "name": "AuraSync",
+  "description": "Restorative workspace telemetry and cadence protection companion designed to safeguard cognitive resonance and prevent attention residue.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

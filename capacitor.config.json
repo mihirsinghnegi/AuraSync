@@ -1,0 +1,8 @@
+{
+  "appId": "com.aurasync.app",
+  "appName": "AuraSync",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

@@ -1,0 +1,234 @@
+---
+name: AuraSync Calm Telemetry
+colors:
+  surface: '#0e1513'
+  surface-dim: '#0e1513'
+  surface-bright: '#333b38'
+  surface-container-lowest: '#09100e'
+  surface-container-low: '#161d1b'
+  surface-container: '#1a211f'
+  surface-container-high: '#242b29'
+  surface-container-highest: '#2f3634'
+  on-surface: '#dde4e0'
+  on-surface-variant: '#c1c8c3'
+  inverse-surface: '#dde4e0'
+  inverse-on-surface: '#2b3230'
+  outline: '#8b928e'
+  outline-variant: '#414845'
+  surface-tint: '#aacebf'
+  primary: '#aacebf'
+  on-primary: '#15362c'
+  primary-container: '#7ea193'
+  on-primary-container: '#16372d'
+  inverse-primary: '#446559'
+  secondary: '#8cd2d9'
+  on-secondary: '#00363b'
+  secondary-container: '#005c62'
+  on-secondary-container: '#8cd2d9'
+  tertiary: '#f9bb68'
+  on-tertiary: '#462b00'
+  tertiary-container: '#c68f41'
+  on-tertiary-container: '#472c00'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#c6ebdb'
+  primary-fixed-dim: '#aacebf'
+  on-primary-fixed: '#002117'
+  on-primary-fixed-variant: '#2c4d42'
+  secondary-fixed: '#a8eef6'
+  secondary-fixed-dim: '#8cd2d9'
+  on-secondary-fixed: '#002022'
+  on-secondary-fixed-variant: '#004f55'
+  tertiary-fixed: '#ffddb5'
+  tertiary-fixed-dim: '#f9bb68'
+  on-tertiary-fixed: '#2a1800'
+  on-tertiary-fixed-variant: '#643f00'
+  background: '#0e1513'
+  on-background: '#dde4e0'
+  surface-variant: '#2f3634'
+typography:
+  headline-xl:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 2.5rem
+    fontWeight: '600'
+    lineHeight: 3rem
+    letterSpacing: -0.03em
+  headline-xl-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 2rem
+    fontWeight: '600'
+    lineHeight: 2.5rem
+    letterSpacing: -0.025em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 2rem
+    fontWeight: '600'
+    lineHeight: 2.5rem
+    letterSpacing: -0.025em
+  headline-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 1.625rem
+    fontWeight: '600'
+    lineHeight: 2.125rem
+    letterSpacing: -0.02em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 1.5rem
+    fontWeight: '500'
+    lineHeight: 2rem
+    letterSpacing: -0.015em
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 1.25rem
+    fontWeight: '500'
+    lineHeight: 1.75rem
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Inter
+    fontSize: 1.125rem
+    fontWeight: '400'
+    lineHeight: 1.8rem
+    letterSpacing: -0.005em
+  body-md:
+    fontFamily: Inter
+    fontSize: 1rem
+    fontWeight: '400'
+    lineHeight: 1.6rem
+    letterSpacing: 0em
+  body-sm:
+    fontFamily: Inter
+    fontSize: 0.875rem
+    fontWeight: '400'
+    lineHeight: 1.45rem
+    letterSpacing: 0.005em
+  label-md:
+    fontFamily: Inter
+    fontSize: 0.875rem
+    fontWeight: '500'
+    lineHeight: 1.25rem
+    letterSpacing: 0.01em
+  label-sm:
+    fontFamily: Inter
+    fontSize: 0.75rem
+    fontWeight: '500'
+    lineHeight: 1rem
+    letterSpacing: 0.03em
+  caption:
+    fontFamily: Inter
+    fontSize: 0.6875rem
+    fontWeight: '400'
+    lineHeight: 0.95rem
+    letterSpacing: 0.04em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-sm: 1rem
+  gutter-lg: 2rem
+  margin: 2rem
+  margin-sm: 1.25rem
+  margin-lg: 3.5rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system embodies an ambient, restorative digital atmosphere tailored for knowledge workers navigating mental fatigue and demanding workflows. The brand posture is protective, sentient, and grounded—functioning less like an urgent productivity tracker and more like an unobtrusive environmental presence.
+
+The visual style merges **Minimalism** with organic **Glassmorphism**:
+- Deep slate and moss surfaces create an intimate, low-luminance workspace that reduces optical strain.
+- Translucent frosted glass containers soften information boundaries without rigid visual clutter.
+- Organic illumination and soft gradients replace shrill badges, sharp alerts, and disruptive cues.
+- The interface feels spacious, unhurried, and emotionally tranquil, intentionally engineered to prevent cognitive overload.
+
+## Colors
+
+The palette derives from quiet ecological tones designed to sustain nervous system equilibrium over extended screen sessions. High-alert crimsons and jarring neons are strictly prohibited.
+
+- **Primary (`#7EA193` - Soft Sage Green):** Guides primary orientation, balanced states, steady mental reserves, and key positive interactions.
+- **Secondary (`#388087` - Ambient Teal):** Delivers supportive depth, calm metric visualization, active focus zones, and subtle atmospheric glows.
+- **Tertiary (`#E3A857` - Warm Amber):** Denotes approaching capacity thresholds, mindful pause nudges, and delicate alerts. It guides awareness without triggering alarmist urgency.
+- **Accent Glow (`#6FB98F` - Soft Cyan/Mint):** Reserved for low-intensity ambient gradients, pulse animations, and deep focus indicators.
+- **Neutral Base (`#121917` - Deep Moss Slate):** Grounding canvas foundation that provides high optical comfort in low-light environments.
+- **Functional Tiers:**
+  - *Base Surface:* `#0E1412`
+  - *Elevated Glass Base:* `rgba(24, 34, 31, 0.65)`
+  - *Border Highlight:* `rgba(126, 161, 147, 0.12)`
+  - *Primary Text:* `#E6ECE9`
+  - *Secondary / Muted Text:* `#8A9E96`
+
+## Typography
+
+The typographic hierarchy pairs the human-centric curves of **Plus Jakarta Sans** for headlines with the clarity and neutrality of **Inter** for data telemetry and functional interface text.
+
+- **Headings (Plus Jakarta Sans):** Crafted with balanced, gentle geometry to deliver calm authority without harsh corporate stiffness. Generous line heights maintain a peaceful reading tempo.
+- **Body & Telemetry (Inter):** High x-height and open apertures enable instant legibility for subtle cognitive load metrics, micro-schedule segments, and recovery suggestions.
+- **Tracking & Proportion:** Display headlines feature slight negative tracking for visual unity, while telemetry values, micro-labels, and timestamps incorporate subtle positive letter-spacing to ensure quick glanceability without strain.
+
+## Layout & Spacing
+
+The spatial architecture prioritizes visual decompression and breathing room. Layouts prevent density clusters through intentional margins and generous negative space.
+
+- **Grid Strategy:**
+  - **Desktop (1024px+):** 12-column fluid grid system, max-width `1280px` centered canvas, `margin-lg` (3.5rem), and `gutter-lg` (2rem). Content cards span 4, 6, 8, or 12 columns.
+  - **Tablet (640px – 1023px):** 8-column layout, `margin` (2rem), and `gutter` (1.5rem). Split columns consolidate into dual-focus areas.
+  - **Mobile (< 640px):** 4-column single-stream stack, `margin-sm` (1.25rem), and `gutter-sm` (1rem). Telemetry arcs and schedules collapse into vertical scroll views with expansive top and bottom safe pads.
+- **Rhythm & Gaps:** Component internal gaps scale strictly using `space-xs` through `space-xl`, ensuring internal padding inside cards is always proportional to the ambient gutters.
+
+## Elevation & Depth
+
+Depth is conveyed through luminous glassmorphism, low-frequency atmospheric color fields, and light filtration rather than opaque shadows or hard elevation drops:
+
+- **Surface Layer 0 (Atmosphere):** Solid deep moss slate (`#0E1412`) overlaid with soft, drifting, radial blurs using `#388087` (at 6% opacity) and `#7EA193` (at 4% opacity).
+- **Surface Layer 1 (Frosted Modules):** `rgba(20, 29, 26, 0.55)` backing with a backdrop filter of `blur(16px) saturate(140%)` and a micro-rim border of `1px solid rgba(126, 161, 147, 0.14)`.
+- **Surface Layer 2 (Raised Dynamic Panels & Drawers):** `rgba(28, 40, 36, 0.72)` backing with `blur(24px)` and a directional top highlight border: `linear-gradient(180deg, rgba(227, 168, 87, 0.18) 0%, rgba(126, 161, 147, 0.05) 100%)`.
+- **Ambient Shadow System:** Deep, diffused, low-opacity drop shadows (`0 16px 40px -8px rgba(4, 8, 7, 0.45)`) paired with soft colored contact glows beneath critical telemetry states.
+
+## Shapes
+
+The geometric signature uses roundedness level `2`. Corners are soft, balanced, and organic, removing abrasive visual tension across every viewport.
+
+- **Base Radius (0.5rem / 8px):** Applied to badges, metric chips, audio toggle pills, and form field elements.
+- **Large Radius (`rounded-lg`, 1rem / 16px):** Standard for frosted telemetry cards, micro-break prompts, interactive calendar blocks, and focus sessions.
+- **Extra-Large Radius (`rounded-xl`, 1.5rem / 24px):** Used for primary cognitive overview dashboards, ambient soundscapes, floating docks, and persistent sheet dialogs.
+- **Circular / Continuous Pill:** Utilized for global status indicators, play/pause controls, and breathing rhythm visualizers.
+
+## Components
+
+### Buttons & Interactive Triggers
+- **Primary Action (e.g., "Enter Focus", "Accept Break"):** Soft Sage background (`#7EA193`) with deep slate typography (`#0E1412`), semi-bold weight. Hover introduces a subtle cyan radiance (`0 0 20px rgba(111, 185, 143, 0.35)`).
+- **Secondary / Ghost Action:** Frosted background `rgba(126, 161, 147, 0.08)`, border `1px solid rgba(126, 161, 147, 0.2)`, text color `#E6ECE9`. Hover brightens the surface fill to `rgba(126, 161, 147, 0.16)`.
+- **Warm Protective Action (e.g., "Reschedule Overload"):** Transparent amber wash `rgba(227, 168, 87, 0.12)` with amber text (`#E3A857`) and an ambient amber hover halo.
+
+### Chips & Cognitive Badges
+- Non-pill rounded shapes (`rounded-md`, 6px–8px) with hairline frosted borders.
+- **State: Nominal Reserve:** Surface `rgba(111, 185, 143, 0.08)`, text `#7EA193`, icon accompanied by a slow 4-second breathing pulse.
+- **State: Capacity Warning:** Surface `rgba(227, 168, 87, 0.1)`, text `#E3A857`, zero flashing or strobe behaviors.
+
+### Cards & Ambient Modules
+- Semi-transparent glass shells featuring 16px corner radii.
+- Rim illumination uses a linear gradient border from top-left (brighter) to bottom-right (translucent).
+- Zero pure-black separators; content segments are organized strictly through spacing tokens (`space-md`, `space-lg`).
+
+### Telemetry Arcs & Gauges
+- Circular gauges with continuous, non-stepped stroke paths. Background track in `rgba(126, 161, 147, 0.12)`, active arc rendered with a gradient from `#388087` to `#7EA193`.
+- In approaching fatigue states, the gauge gently shifts into `#E3A857` without loud audio alerts or vibration bursts.
+
+### Mindful Micro-Break Prompts
+- Cards with a soft ambient background glow and subtle organic breathing rhythm animations (expand and contract scale by 1.5% over 6s intervals).
+- Non-modal, gentle sliding transitions that never obscure active deep work inputs without prior user configuration.
+
+### Inputs & Selection Controls
+- **Inputs:** Low-contrast surfaces `rgba(14, 20, 18, 0.6)` with inset borders. Focus state illuminates the border with `#7EA193` at 40% opacity alongside an ambient glow of 4px.
+- **Checkboxes & Radios:** Curved containers filled with deep teal when active; unchecked states rest in muted moss slate outline.

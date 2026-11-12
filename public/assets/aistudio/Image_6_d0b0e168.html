@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed-dim":"#f9bb68","surface-variant":"#2f3634","surface-container-low":"#161d1b","primary-container":"#7ea193","on-error-container":"#ffdad6","on-tertiary-fixed-variant":"#643f00","on-background":"#dde4e0","outline-variant":"#414845","surface-tint":"#aacebf","surface-dim":"#0e1513","outline":"#8b928e","on-primary-container":"#16372d","tertiary-container":"#c68f41","error-container":"#93000a","inverse-surface":"#dde4e0","tertiary-fixed":"#ffddb5","surface-container-highest":"#2f3634","secondary-fixed-dim":"#8cd2d9","inverse-on-surface":"#2b3230","on-tertiary-fixed":"#2a1800","primary-fixed-dim":"#aacebf","on-primary":"#15362c","primary":"#aacebf","background":"#0e1513","surface":"#0e1513","inverse-primary":"#446559","on-secondary-fixed-variant":"#004f55","tertiary":"#f9bb68","on-primary-fixed":"#002117","on-secondary-fixed":"#002022","secondary-fixed":"#a8eef6","primary-fixed":"#c6ebdb","on-tertiary-container":"#472c00","on-secondary-container":"#8cd2d9","surface-container":"#1a211f","on-error":"#690005","surface-container-high":"#242b29","on-tertiary":"#462b00","surface-container-lowest":"#09100e","secondary":"#8cd2d9","on-primary-fixed-variant":"#2c4d42","on-surface":"#dde4e0","secondary-container":"#005c62","on-secondary":"#00363b","error":"#ffb4ab","on-surface-variant":"#c1c8c3","surface-bright":"#333b38"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-sm":"1rem","margin":"2rem","space-xl":"2.5rem","space-xs":"0.25rem","gutter":"1.5rem","space-sm":"0.5rem","space-lg":"1.5rem","margin-sm":"1.25rem","margin-lg":"3.5rem","gutter-lg":"2rem","space-md":"1rem"},"fontFamily":{"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-xl":["Plus Jakarta Sans"],"label-md":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"caption":["Inter"]},"fontSize":{"headline-lg-mobile":["1.625rem",{"lineHeight":"2.125rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"500"}],"body-sm":["0.875rem",{"lineHeight":"1.45rem","letterSpacing":"0.005em","fontWeight":"400"}],"headline-xl":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.03em","fontWeight":"600"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["1rem",{"lineHeight":"1.6rem","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.03em","fontWeight":"500"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.025em","fontWeight":"600"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.8rem","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-xl-mobile":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.025em","fontWeight":"600"}],"caption":["0.6875rem",{"lineHeight":"0.95rem","letterSpacing":"0.04em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-low/70 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-[1280px] mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[22px]">spa</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">AuraSync</span></div><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high/80"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Calm Cadence Active</span></div></div><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors font-label-md text-label-md" data-path="companion-widget" href="#">Companion Widget</a><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="buffer-scheduler" href="#">Buffer Scheduler</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors font-label-md text-label-md" data-path="telemetry" href="#">Telemetry</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors font-label-md text-label-md" data-path="preferences" href="#">Preferences</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="hidden lg:inline-block font-label-sm text-label-sm text-on-surface-variant">Ambient Sync</span></div></div></div></header><main class="w-full max-w-[1280px] mx-auto px-margin pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- Ambient Light Fields (Subtle Atmosphere Embers) -->
+<div class="relative w-full">
+<div class="absolute -top-12 left-1/4 w-96 h-72 bg-primary/5 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+<div class="absolute top-48 right-10 w-80 h-80 bg-tertiary/5 rounded-full blur-[90px] pointer-events-none -z-10"></div>
+</div>
+<!-- Header / Context Banner -->
+<section class="w-full pt-space-lg pb-space-xl">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<!-- Left: Title & Empathic Framing -->
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-md bg-primary/10 text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Safe Reserve: 76% • Restorative Equilibrium
+          </span>
+<span class="text-outline font-caption text-caption">•</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+            Adaptive Threshold 60%
+          </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">
+          Day Cadence & Buffer Protection
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Continuous transitions create attention residue. AuraSync reserves gentle breathing space between cognitively demanding sessions.
+        </p>
+</div>
+<!-- Right: Global Protection CTA & Metadata -->
+<div class="flex flex-col items-start lg:items-end gap-space-xs flex-shrink-0">
+<button class="group relative px-space-lg py-space-sm rounded-xl bg-primary text-on-primary font-label-md text-label-md transition-all duration-300 hover:shadow-[0_0_24px_rgba(170,206,191,0.3)] hover:scale-[1.01] active:scale-[0.99] flex items-center gap-space-sm" id="protect-all-btn">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-300 group-hover:rotate-12">shield_with_heart</span>
+<span id="protect-all-text">Protect All Buffers</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-on-primary/15 tracking-wide uppercase">2 Pending</span>
+</button>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">sync</span>
+          Syncs silently to Google & Outlook
+        </span>
+</div>
+</div>
+</section>
+<!-- Main Grid: 65% Timeline / 35% Companion -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg pb-space-xl items-start">
+<!-- Left / Center Column: High-Impact Timeline & Collision Map (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Day Subheader Bar -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">calendar_today</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Today, Thursday</h2>
+<p class="font-caption text-caption text-on-surface-variant">Active Cadence • 9:00 AM – 5:00 PM</p>
+</div>
+</div>
+<!-- Timeline Legend -->
+<div class="hidden sm:flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-surface-variant"></span> Scheduled
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-tertiary-container/60"></span> Attention Friction
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span> Breather Buffer
+          </span>
+</div>
+</div>
+<!-- Schedule Canvas -->
+<div class="relative flex flex-col gap-space-md">
+<!-- TIME BLOCK 1: Architecture Sprint -->
+<div class="relative flex items-stretch gap-space-md">
+<!-- Time Marker Track -->
+<div class="w-16 flex-shrink-0 pt-space-xs text-right">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">09:30</span>
+<span class="block font-caption text-caption text-outline">10:30 AM</span>
+</div>
+<!-- Event Card -->
+<div class="flex-1 p-space-md rounded-xl bg-surface-container-high shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[22px] text-secondary mt-0.5">videocam</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Eng Architecture Sprint Sync</h3>
+<div class="flex items-center gap-space-sm mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zoom • Multi-party</span>
+<span class="text-outline font-caption text-caption">•</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+                      High Context Switch
+                    </span>
+</div>
+</div>
+</div>
+<!-- Strain Dial Metric -->
+<div class="flex items-center gap-space-sm sm:self-center bg-surface-container-lowest/70 px-space-sm py-1.5 rounded-lg">
+<div class="text-right">
+<div class="font-caption text-caption uppercase tracking-wider text-outline">Predicted Strain</div>
+<div class="font-headline-sm text-headline-sm text-tertiary leading-none font-semibold">78%</div>
+</div>
+<div class="w-7 h-7">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-tertiary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="78, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- COLLISION ZONE / FRICTION WARNING -->
+<div class="relative flex items-center gap-space-md pl-16">
+<div class="w-full flex items-center justify-between px-space-md py-space-xs rounded-lg bg-tertiary/10 text-tertiary shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px]">warning_amber</span>
+<span class="font-label-sm text-label-sm font-medium">Attention Residue Risk — Zero Interstitial Buffer</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant hidden md:inline">Working memory bleed into next deep block: +42%</span>
+</div>
+</div>
+<!-- BREATHER BLOCK 1: Suggested Restorative Slot -->
+<div class="relative flex items-stretch gap-space-md">
+<!-- Time Marker Track -->
+<div class="w-16 flex-shrink-0 pt-space-xs text-right">
+<span class="font-label-md text-label-md text-primary font-medium">10:30</span>
+<span class="block font-caption text-caption text-primary/70">10:40 AM</span>
+</div>
+<!-- Calming Soft Sage Resonant Card -->
+<div class="flex-1 p-space-md rounded-xl bg-surface-container-high transition-all duration-300 shadow-md" id="buffer-block-1">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm max-w-xl">
+<div class="w-9 h-9 rounded-lg bg-primary/15 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">self_improvement</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-primary/20 text-primary uppercase tracking-wider">AI Suggested Buffer</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Clear 10 mins to catch your breath?</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Sprint Sync immediately precedes deep compiler work. Decompress working memory before diving in.
+                  </p>
+</div>
+</div>
+<!-- Inline Action Trigger -->
+<div class="flex items-center gap-space-sm flex-shrink-0 self-end md:self-center">
+<button class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 transition-all duration-200 hover:shadow-[0_0_16px_rgba(170,206,191,0.35)] active:scale-95" onclick="protectBuffer('buffer-block-1', this)">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Protect Time</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- TIME BLOCK 2: Deep Focus -->
+<div class="relative flex items-stretch gap-space-md">
+<div class="w-16 flex-shrink-0 pt-space-xs text-right">
+<span class="font-label-md text-label-md text-on-surface font-medium">10:40</span>
+<span class="block font-caption text-caption text-outline">12:40 PM</span>
+</div>
+<div class="flex-1 p-space-md rounded-xl bg-surface-container shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[22px] text-primary mt-0.5">code</span>
+<div>
+<div class="flex items-center gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Deep Focus: Rust Memory & State Refactor</h3>
+<span class="px-2 py-0.5 rounded text-[10px] font-medium bg-primary/10 text-primary">Protected</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">IDE Execution Block</span>
+<span class="text-outline font-caption text-caption">•</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">notifications_off</span>
+                      Slack Muted
+                    </span>
+</div>
+</div>
+</div>
+<div class="text-right sm:self-center">
+<span class="font-label-sm text-label-sm text-primary font-medium">2h 00m Undisturbed</span>
+</div>
+</div>
+</div>
+</div>
+<!-- TIME BLOCK 3: Mid-Day Walk -->
+<div class="relative flex items-stretch gap-space-md">
+<div class="w-16 flex-shrink-0 pt-space-xs text-right">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">12:40</span>
+<span class="block font-caption text-caption text-outline">01:15 PM</span>
+</div>
+<div class="flex-1 p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[22px] text-secondary">park</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Mid-Day Restorative Respite & Walk</h4>
+<p class="font-caption text-caption text-on-surface-variant">Auto-preserved • Low cognitive load</p>
+</div>
+</div>
+<span class="px-2 py-1 rounded-md bg-secondary/10 text-secondary font-label-sm text-label-sm font-medium">35 mins</span>
+</div>
+</div>
+</div>
+<!-- TIME BLOCK 4: Design System Review -->
+<div class="relative flex items-stretch gap-space-md">
+<div class="w-16 flex-shrink-0 pt-space-xs text-right">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">01:15</span>
+<span class="block font-caption text-caption text-outline">02:00 PM</span>
+</div>
+<div class="flex-1 p-space-md rounded-xl bg-surface-container-high shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[22px] text-tertiary mt-0.5">palette</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cross-functional Design System Review</h3>
+<div class="flex items-center gap-space-sm mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Figma / Meet</span>
+<span class="text-outline font-caption text-caption">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Medium Load (Strain: 52%)</span>
+</div>
+</div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">45 mins</span>
+</div>
+</div>
+</div>
+<!-- BREATHER BLOCK 2: 10m Sensory Reset -->
+<div class="relative flex items-stretch gap-space-md">
+<div class="w-16 flex-shrink-0 pt-space-xs text-right">
+<span class="font-label-md text-label-md text-primary font-medium">02:00</span>
+<span class="block font-caption text-caption text-primary/70">02:10 PM</span>
+</div>
+<div class="flex-1 p-space-md rounded-xl bg-surface-container-high transition-all duration-300 shadow-md" id="buffer-block-2">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary/15 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">air</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-primary/20 text-primary uppercase tracking-wider">Breather Interval</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">10m Sensory Reset</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Allows ocular rest and visual reset after intensive vector inspections.
+                  </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0 self-end md:self-center">
+<button class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 transition-all duration-200 hover:shadow-[0_0_16px_rgba(170,206,191,0.35)] active:scale-95" onclick="protectBuffer('buffer-block-2', this)">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Protect Time</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- TIME BLOCK 5: Telemetry Pipeline RFC -->
+<div class="relative flex items-stretch gap-space-md">
+<div class="w-16 flex-shrink-0 pt-space-xs text-right">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">02:10</span>
+<span class="block font-caption text-caption text-outline">03:30 PM</span>
+</div>
+<div class="flex-1 p-space-md rounded-xl bg-surface-container-high shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[22px] text-secondary">forum</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Telemetry Pipeline RFC Discussion</h3>
+<p class="font-caption text-caption text-on-surface-variant">Technical Review • Moderated Cadence</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline">1h 20m</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Rail: Restorative Companion Panel (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Module 1: Focused Breather Experience Selector -->
+<div class="p-space-lg rounded-2xl bg-surface-container-high shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">spa</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Breather Experience</h3>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">10m Protocols</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant -mt-2">
+          Select your ambient environment when an automatic buffer engages.
+        </p>
+<!-- Selection Cards -->
+<div class="flex flex-col gap-space-sm" id="experience-list">
+<!-- Option 1: 4-4-4 Box Breathing (Active by default) -->
+<div class="experience-card relative p-space-md rounded-xl bg-surface-container-lowest cursor-pointer transition-all duration-200 shadow-sm" data-active="true" onclick="selectExperience(this)">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary/20 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">adjust</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">4-4-4 Box Breathing</h4>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">
+                    Soft ambient pacing ring with a gentle, non-verbal cadence.
+                  </p>
+</div>
+</div>
+<span class="status-indicator material-symbols-outlined text-primary text-[20px]">radio_button_checked</span>
+</div>
+<!-- Mini Visualized Cadence Pacer -->
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+                Inhale 4s • Hold 4s • Exhale 4s
+              </span>
+<span class="text-primary font-medium">Equilibrium</span>
+</div>
+</div>
+<!-- Option 2: Somatic Screen Off -->
+<div class="experience-card relative p-space-md rounded-xl bg-surface-container-lowest cursor-pointer transition-all duration-200 shadow-sm" data-active="false" onclick="selectExperience(this)">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-variant text-on-surface-variant flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">bedtime</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Somatic Screen Off</h4>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">
+                    Darkens monitors and plays an organic chime 60 seconds before time expires.
+                  </p>
+</div>
+</div>
+<span class="status-indicator material-symbols-outlined text-outline text-[20px]">radio_button_unchecked</span>
+</div>
+</div>
+<!-- Option 3: Sensory Disconnect -->
+<div class="experience-card relative p-space-md rounded-xl bg-surface-container-lowest cursor-pointer transition-all duration-200 shadow-sm" data-active="false" onclick="selectExperience(this)">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-variant text-on-surface-variant flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">waves</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Sensory Disconnect</h4>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">
+                    Streams a warm 432Hz harmonic soundscape and mutes peripheral alerts.
+                  </p>
+</div>
+</div>
+<span class="status-indicator material-symbols-outlined text-outline text-[20px]">radio_button_unchecked</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Module 2: Cognitive Residue Telemetry -->
+<div class="p-space-lg rounded-2xl bg-surface-container-high shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">analytics</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Residue Telemetry</h3>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium">Live Model</span>
+</div>
+<!-- Telemetry Stats Cards -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-lowest flex flex-col justify-between">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Attention Residue</span>
+<div class="my-space-xs">
+<div class="font-headline-lg text-headline-lg text-primary font-semibold leading-none">−41%</div>
+<span class="font-caption text-caption text-on-surface-variant mt-1 block">When buffers are honored</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[41%] rounded-full"></div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest flex flex-col justify-between">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Penalty Prevented</span>
+<div class="my-space-xs">
+<div class="font-headline-lg text-headline-lg text-secondary font-semibold leading-none">28m</div>
+<span class="font-caption text-caption text-on-surface-variant mt-1 block">Context fatigue saved today</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[65%] rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Status Masking Preview Card -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption uppercase tracking-wider text-outline">Slack Masking Preview</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<span class="material-symbols-outlined text-[18px] text-primary">coffee</span>
+<span class="font-label-md text-label-md text-on-surface italic">
+              “In restorative transition until 10:40 AM”
+            </span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant mt-1">
+            Contacts receive gentle bounce-back notices preventing rapid pings.
+          </span>
+</div>
+</div>
+<!-- Module 3: Low-Friction Cadence Automation Toggle -->
+<div class="p-space-md rounded-2xl bg-surface-container shadow-md flex items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">auto_mode</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Automatic Protection</h4>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">
+              Auto-insert 10m buffer when meeting friction exceeds 60%.
+            </p>
+</div>
+</div>
+<!-- Accessible Interactive Switch -->
+<button aria-checked="true" class="w-12 h-6 flex items-center bg-primary rounded-full p-1 cursor-pointer transition-colors duration-300 flex-shrink-0" id="friction-toggle" onclick="toggleSwitch(this)" role="switch">
+<div class="bg-on-primary w-4 h-4 rounded-full shadow-md transform translate-x-6 transition-transform duration-300" id="switch-thumb"></div>
+</button>
+</div>
+<!-- Organic Ambient Restorative Prompt Card -->
+<div class="p-space-lg rounded-2xl bg-gradient-to-br from-surface-container-high to-surface-container-low shadow-sm relative overflow-hidden">
+<div class="relative z-10">
+<span class="font-caption text-caption uppercase tracking-widest text-primary font-semibold">Biological Rhythm</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-1 leading-relaxed">
+            Your ultradian cycle reaches peak receptivity at 10:45 AM. The 10m buffer preserves neural bandwidth so you can sustain focus without forced willpower.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Single-Click Buffer Protection Confirmation
+  function protectBuffer(blockId, buttonElement) {
+    const block = document.getElementById(blockId);
+    if (!block) return;
+
+    // Instant Visual Feedback
+    buttonElement.disabled = true;
+    buttonElement.classList.remove('bg-primary', 'hover:shadow-[0_0_16px_rgba(170,206,191,0.35)]');
+    buttonElement.classList.add('bg-primary/20', 'text-primary', 'cursor-default');
+    buttonElement.innerHTML = `
+      <span class="material-symbols-outlined text-[18px]">done_all</span>
+      <span>Protected • Synced</span>
+    `;
+
+    // Ambient card state transition
+    block.classList.add('bg-primary/10');
+  }
+
+  // Global "Protect All Buffers" Handler
+  const protectAllBtn = document.getElementById('protect-all-btn');
+  if (protectAllBtn) {
+    protectAllBtn.addEventListener('click', () => {
+      // Trigger all pending single buttons
+      const b1 = document.getElementById('buffer-block-1');
+      const b2 = document.getElementById('buffer-block-2');
+
+      if (b1) {
+        const btn1 = b1.querySelector('button');
+        if (btn1 && !btn1.disabled) protectBuffer('buffer-block-1', btn1);
+      }
+      if (b2) {
+        const btn2 = b2.querySelector('button');
+        if (btn2 && !btn2.disabled) protectBuffer('buffer-block-2', btn2);
+      }
+
+      // Update global action
+      protectAllBtn.classList.remove('hover:scale-[1.01]');
+      protectAllBtn.classList.add('bg-primary-container', 'text-on-primary-container');
+      const textSpan = document.getElementById('protect-all-text');
+      if (textSpan) textSpan.textContent = 'All Buffers Protected';
+      const badge = protectAllBtn.querySelector('span:last-child');
+      if (badge) {
+        badge.textContent = 'Active';
+        badge.classList.remove('bg-on-primary/15');
+        badge.classList.add('bg-on-primary-container/20');
+      }
+    });
+  }
+
+  // Experience Card Selector Logic
+  function selectExperience(selectedCard) {
+    const cards = document.querySelectorAll('.experience-card');
+    cards.forEach(card => {
+      card.setAttribute('data-active', 'false');
+      const icon = card.querySelector('.status-indicator');
+      if (icon) {
+        icon.textContent = 'radio_button_unchecked';
+        icon.classList.remove('text-primary');
+        icon.classList.add('text-outline');
+      }
+    });
+
+    selectedCard.setAttribute('data-active', 'true');
+    const activeIcon = selectedCard.querySelector('.status-indicator');
+    if (activeIcon) {
+      activeIcon.textContent = 'radio_button_checked';
+      activeIcon.classList.remove('text-outline');
+      activeIcon.classList.add('text-primary');
+    }
+  }
+
+  // Friction Auto-Insert Toggle Logic
+  function toggleSwitch(switchBtn) {
+    const isChecked = switchBtn.getAttribute('aria-checked') === 'true';
+    const thumb = document.getElementById('switch-thumb');
+
+    if (isChecked) {
+      switchBtn.setAttribute('aria-checked', 'false');
+      switchBtn.classList.remove('bg-primary');
+      switchBtn.classList.add('bg-surface-variant');
+      thumb.classList.remove('translate-x-6');
+      thumb.classList.add('translate-x-0');
+    } else {
+      switchBtn.setAttribute('aria-checked', 'true');
+      switchBtn.classList.remove('bg-surface-variant');
+      switchBtn.classList.add('bg-primary');
+      thumb.classList.remove('translate-x-0');
+      thumb.classList.add('translate-x-6');
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-lowest/60 py-space-lg"><div class="max-w-[1280px] mx-auto px-margin flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><span>© 2025 AuraSync. Gentle workspace telemetry.</span><span>Restorative Environment Mode</span></div></footer></body></html>
