@@ -47,8 +47,20 @@ jobs:
           npm install @capacitor/core @capacitor/cli @capacitor/android --legacy-peer-deps
           npx cap add android || true
           npx cap sync android
+          cat << 'EOF' >> android/build.gradle
 
-      - name: Build Android Debug APK
+          subprojects {
+              configurations.configureEach {
+                  resolutionStrategy.eachDependency { details ->
+                      if (details.requested.group == 'org.jetbrains.kotlin' && (details.requested.name == 'kotlin-stdlib-jdk7' || details.requested.name == 'kotlin-stdlib-jdk8')) {
+                          details.useVersion '1.8.22'
+                      }
+                  }
+              }
+          }
+          EOF
+
+      - name: Build Android APK
         working-directory: android
         run: |
           chmod +x gradlew
@@ -73,7 +85,8 @@ jobs:
         run: |
           TAG="v1.0.0"
           TITLE="AuraSync v1.0.0 - Android Release"
-          NOTES="### AuraSync v1.0.0 (Android APK)
+          cat << 'EOF' > release-notes.md
+          ### AuraSync v1.0.0 (Android APK)
 
           Restorative workspace telemetry and cadence protection companion.
 
@@ -82,14 +95,12 @@ jobs:
           - **Focus Shield**: Non-intrusive peripheral modal with somatic reset protocols.
           - **Telemetry**: Cognitive spline analytics and ambient 432Hz acoustic shield.
 
-          Download the attached **AuraSync-v1.0.0.apk** below to install on Android."
-          
-          # Delete existing release/tag if already present to ensure clean upload
+          Download the attached **AuraSync-v1.0.0.apk** below to install on Android.
+          EOF
+
           gh release delete "$TAG" --yes || true
-          git tag -d "$TAG" || true
           git push origin :refs/tags/"$TAG" || true
 
-          # Create release and upload APK
           gh release create "$TAG" release-output/AuraSync-v1.0.0.apk \
             --title "$TITLE" \
-            --notes "$NOTES"
+            --notes-file release-notes.md
